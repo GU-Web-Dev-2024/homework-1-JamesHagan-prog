@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>James Hagan CPSC 332 Web Development</title>
+        <style>
+            body {
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    
+    <body id="body-color">
+        <h1>James Hagan: HW1 Submission</h1>
+        <p>In this class i hope to be able to learn the <strong>essential</strong> web development <em>concepts</em>.
+        I did web dev in <em>highschool</em> and hope to regain and learn new skills.
+        I have always <strong>loved</strong> creating <em>websites and projects</em>, so i am excited for this class.
+        I also <em>hope</em> to have a good looking website housing all of my <strong>projects</strong> created by the end of this semester.
+        </p>
+        <img src="webdev-meme.jpg" alt="web dev meme" style="width:px;height:450px;">
+        <a href="https://www.reddit.com/r/ProgrammerHumor/comments/140hdl9/another_webdev_meme/">Web Dev Meme Origin</a>
+        <button id="red-btn">Make it Red</button>
+        <button id="aqua-btn">Make it Aqua</button>
+        <script>    
+            let aquaBtn = document.getElementById("aqua-btn");
+            aquaBtn.addEventListener("click", function() {
+               changeBodyColor("aqua");
+            });         
+   
+            let redBtn = document.getElementById("red-btn");
+            redBtn.addEventListener("click", function() {
+               changeBodyColor("red");
+            }); 
+   
+            function changeBodyColor(newColor) {
+               let body = document.getElementById("body-color");
+               body.style.backgroundColor = newColor;
+            }
+         </script>
+    </body>
+</html>
